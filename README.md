@@ -1,9 +1,5 @@
-# crystal-coves
+# crystal-coves-quartz-edition
 
-**#2 MINING-GAME ON GITHUB** *definetly not out of 5*
+Crystal Coves: Education Edition
 
-github aggressively wants me to add a readme help i am being held hostage to add this and make it relevant;;;
-
-ABOVE IS JOKE!
-
-CURRENT ORES: ThisNumbahIsOutdated
+pls dont commit
