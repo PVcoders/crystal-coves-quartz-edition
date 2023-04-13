@@ -343,6 +343,7 @@ class OreDisplay {
         this.y = y;
         this.deposit = Boolean(Math.random() * 15 > 14 && this.rarity > 1)
         ctx.beginPath();
+        console.log(this.type)
         ctx.drawImage(this.texture, x, y, 25, 25);
     }
 }
@@ -375,45 +376,50 @@ let aprilFoolsEvent = new GameEvent(
 
 let stone = new Ore("stone", 1);
 let voidElement = new Ore("voidElement", 1, {display: "Void."});
-let copper = new Ore("copper", 15);
-let coal = new Ore("coal", 25);
-let iron = new Ore("iron", 40)
+let copper = new Ore("copper", 30);
+let coal = new Ore("coal", 40);
+let iron = new Ore("iron", 25)
 let lead = new Ore("lead", 65);
-let gold = new Ore("gold", 300);
-let relic = new Ore("relic", 500, {display: "Bronze Relic"});
-let emerald = new Ore("emerald", 750);
-let diamond = new Ore("diamond", 1000);
-let painite = new Ore("painite", 1500);
-let vyvyxyn = new Ore("vyvyxyn", 3000);
+let gold = new Ore("gold", 500);
+let relic = new Ore("relic", 800, {display: "Bronze Relic"});
+let emerald = new Ore("emerald", 1800);
+let diamond = new Ore("diamond", 2000);
+let painite = new Ore("painite", 5000);
+// let vyvyxyn = new Ore("vyvyxyn", 3000);
 // ALL ORES NEWER THAN VYVYXYN GO BELOW IN INCREASINGLY NEW ORDER
-let crystalresonance = new Ore("crystalresonance", 25000, {display: "Crystal of Resonance"})
-let crysor = new Ore("crysor", 5000)
+// let crystalresonance = new Ore("crystalresonance", 25000, {display: "Crystal of Resonance"})
+// let crysor = new Ore("crysor", 5000)
 // Release
-let amethyst = new Ore("amethyst", 175)
+let amethyst = new Ore("amethyst", 500)
 // 1.1
-let fossil = new Ore("fossil", 900)
-let porvileon = new Ore("porvileon", 12500)
+let fossil = new Ore("fossil", 2500)
+// let porvileon = new Ore("porvileon", 12500)
 // 1.2
-let xyxyvylyn = new Ore("xyxyvylyn", 3000)
+// let xyxyvylyn = new Ore("xyxyvylyn", 3000)
 // 1.2.1
-let patricine = new Ore("patricine", 3000, {event: stPatricksEvent})
+// let patricine = new Ore("patricine", 3000, {event: stPatricksEvent})
 // 1.3
-let cobalt = new Ore("cobalt", 4000, {display: "Cobalt-60"})
-let mysalin = new Ore("mysalin", 15723)
+// let mysalin = new Ore("mysalin", 15723)
 // 2.0
-let basalt = new Ore("basalt", 200, {time: "night"})
-let magma = new Ore("magma", 200, {time: "day"})
-let chilledamethyst = new Ore("chilledamethyst", 3800, {time: "night", display: "Chilled Amethyst"})
-let infernalgold = new Ore("infernalgold", 3800, {time: "day", display: "Infernal Gold"})
-let astralcrystal = new Ore("astralcrystal", 60000, {time: "night", display: "&#9789; Astral Crystal &#9790;"})
-let divinecrystal = new Ore("divinecrystal", 60000, {time: "day", display: "&#9788; Divine Crystal &#9788;"})
+let basalt = new Ore("basalt", 100)
+// let magma = new Ore("magma", 200, {time: "day"})
+// let chilledamethyst = new Ore("chilledamethyst", 3800, {time: "night", display: "Chilled Amethyst"})
+// let infernalgold = new Ore("infernalgold", 3800, {time: "day", display: "Infernal Gold"})
+// let astralcrystal = new Ore("astralcrystal", 60000, {time: "night", display: "&#9789; Astral Crystal &#9790;"})
+// let divinecrystal = new Ore("divinecrystal", 60000, {time: "day", display: "&#9788; Divine Crystal &#9788;"})
 // 9.9.9
-let thefunny = new Ore("thefunny", 300, {display: "THE FUNNIEST ORE IN ALL OF CRYSTAL COVES", event: aprilFoolsEvent})
-let mrbeastore = new Ore("mrbeastore", 2500, {event: aprilFoolsEvent})
+// let thefunny = new Ore("thefunny", 300, {display: "THE FUNNIEST ORE IN ALL OF CRYSTAL COVES", event: aprilFoolsEvent})
+// let mrbeastore = new Ore("mrbeastore", 2500, {event: aprilFoolsEvent})
 // 2.1
 let tungsten = new Ore("tungsten", 144)
 // 2.2
-let quartz = new Ore("quartz", 30)
+let quartz = new Ore("quartz", 15)
+// Quartz Edition
+let citrine = new Ore("citrine", 3333)
+let rosequartz = new Ore("rosequartz", 150, {display: "Rose Quartz"})
+let smokyquartz = new Ore("smokyquartz", 200, {display: "Smoky Quartz"})
+let chalcedony = new Ore("chalcedony", 800)
+let tigerseye = new Ore("tigerseye", 1500, {display: "Tiger's Eye"})
 
 
 stone.percentChunk = [totalPercent, 0]
